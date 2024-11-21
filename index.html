@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram Feed Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><a href="#"><img src="./assets/images/logo.png" alt="Logo" /></a></div>
+                <div class="search bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-links">
+                    <ul class="nav-group">
+                        <li class="nav-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li class="nav-item"><a href="#"><i class="far fa-compass"></i></a></li>
+                        <li class="nav-item"><a href="#"><i class="far fa-heart"></i></a></li>
+                        <li class="nav-item">
+                            <div class="action">
+                                <div class="profile" onclick="menuToggle()">
+                                    <img src="./assets/images/crop.png" alt="user Avatar">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col-9">
+                <div class="statuses">
+                    <div class="status"><img src="./assets/images/user-1.jpeg" alt=""></div>
+                    <div class="status"><img src="./assets/images/user-2.jpeg" alt=""></div>
+                    <div class="status"><img src="./assets/images/user-3.jpeg" alt=""></div>
+                    <div class="status"><img src="./assets/images/user-4.jpeg" alt=""></div>
+                    <div class="status"><img src="./assets/images/user-5.jpeg" alt=""></div>
+                </div>
+                <div id="postContainer"></div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <h4>Suggestions For You</h4>
+                <div class="top">
+                  <div class="userDetails">
+                    <div class="profilepic">
+                      <div class="profile_img">
+                        <div class="image">
+                          <img src="./assets/images/user-1.jpeg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Lisa<br><span>Follows You</span></h3>
+                  </div>
+                  <div>
+                    <a href="#" class="follow">follow</a>
+                  </div>
+                </div>
+                <div class="top">
+                  <div class="userDetails">
+                    <div class="profilepic">
+                      <div class="profile_img">
+                        <div class="image">
+                          <img src="./assets/images/user-2.jpeg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <h3>cody<br><span>Follows You</span></h3>
+                  </div>
+                  <div>
+                    <a href="#" class="follow">follow</a>
+                  </div>
+                </div>
+                <div class="top">
+                  <div class="userDetails">
+                    <div class="profilepic">
+                      <div class="profile_img">
+                        <div class="image">
+                          <img src="./assets/images/user-3.jpeg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Mayank<br><span>Follows You</span></h3>
+                  </div>
+                  <div>
+                    <a href="#" class="follow">follow</a>
+                  </div>
+                </div>
+                <div class="top">
+                  <div class="userDetails">
+                    <div class="profilepic">
+                      <div class="profile_img">
+                        <div class="image">
+                          <img src="./assets/images/user-4.jpeg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <h3>joey<br><span>Follows You</span></h3>
+                  </div>
+                  <div>
+                    <a href="#" class="follow">follow</a>
+                  </div>
+                </div>
+                <div class="top">
+                  <div class="userDetails">
+                    <div class="profilepic">
+                      <div class="profile_img">
+                        <div class="image">
+                          <img src="./assets/images/user-5.jpeg" alt="" class="cover">
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Rado<br><span>Follows You</span></h3>
+                  </div>
+                  <div>
+                    <a href="#" class="follow">follow</a>
+                  </div>
+                </div>
+              </div>   
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
